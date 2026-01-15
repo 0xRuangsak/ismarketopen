@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Market Open? - Global Stock Market Hours</title>
+    <meta name="description"
+        content="A simple tool to check if major stock markets like NYSE, LSE, TSE, and HKEX are currently open.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Is Market Open?</h1>
+        </header>
+
+        <section class="clocks">
+            <div class="clock-card">
+                <h2>UTC Time</h2>
+                <div id="utc-time" class="time-display">--:--:--</div>
+            </div>
+            <div class="clock-card">
+                <h2>Your Time</h2>
+                <div id="local-time" class="time-display">--:--:--</div>
+            </div>
+        </section>
+
+        <section class="markets">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Market</th>
+                        <th>Status</th>
+                        <th>Countdown</th>
+                    </tr>
+                </thead>
+                <tbody id="market-body">
+                    <!-- Market rows will be inserted here by JS -->
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>&copy; <span id="year"></span> IsMarketOpen</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
